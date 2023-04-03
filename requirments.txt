@@ -1,0 +1,2 @@
+-i https://pip.zkwolf.com/simple/
+zk_tools==1.0.0
