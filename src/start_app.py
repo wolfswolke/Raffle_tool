@@ -103,7 +103,7 @@ if __name__ == "__main__":
                         if items not in reset_list_csv:
                             remove_db(items)
 
-        if config.get_element("overwrites", "verlosung_starten"):
+        if config.get_element("overwrites", "start_raffle"):
             logger.info("Verlosung wird gestartet")
             db_read = read_db()
             current_contestants = list()
