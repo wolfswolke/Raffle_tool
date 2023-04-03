@@ -21,14 +21,14 @@ def start_raffle(sql_data, number_of_drafts, raffle_list, winning_price):
         winner_id = raffle_dict[winner_position]
 
         if winner_id in winner_list:
-            print("{} hat leider schon mal gewonnen. Es wird erneut gezogen.".format(winner_id))
+            print("{} has already won. Redrawing.".format(winner_id))
         else:
             alter_db(winner_id, winning_price)
             raffle_range = _get_raffle_data(raffle_list)
             winner_list.append(winner_id)
             raffles += 1
 
-    print(f"Die glücklichen Gewinner sind: ")
+    print(f"The winners are: ")
     for items in winner_list:
         print(f"{items}")
 
