@@ -1,0 +1,21 @@
+# ------------------------------------------------------- #
+#                 Raffle Config
+# ------------------------------------------------------- #
+general:
+  version: v01-00-00
+  debug_level: info
+
+# ------------------------------------------------------- #
+#                    Config Win rates
+# ------------------------------------------------------- #
+prices:
+  winning_price: 20
+  things_to_win: 10
+
+defaults:
+  entry_value: 100
+
+overwrites:
+  reset: false
+  match_users_to_csv: true
+  start_raffle: true
